@@ -7,7 +7,7 @@ type LayoutType = {
 };
 const Layout = ({ children }: LayoutType) => {
   return (
-    <div className="w-[100vw] h-[100vh] flex flex-row items-start justify-start">
+    <div className="w-[100vw] h-[100vh] flex flex-row items-start justify-start bg-dark-hard">
       <Sidebar />
       <div className="h-[100vh] flex-1 flex flex-col items-start justify-start">
         <Navbar />
