@@ -7,4 +7,59 @@ body {
   margin: 0;
 }
 
-/* Neon Button */
+/* Neon Text */
+
+h1 {
+  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; */
+  text-shadow: 0 0 5px #1a274e, 0 0 15px #3376dc, 0 0 20px #13bea4,
+    0 0 40px #3d0d9b, 0 0 60px #1a1771, 0 0 10px #0084ff, 0 0 98px #1e7d82;
+  text-align: center;
+  animation: blink 3s infinite;
+  -webkit-animation: blink 3s infinite;
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #1a274e, 0 0 15px #3376dc, 0 0 20px #13bea4,
+      0 0 40px #3d0d9b, 0 0 60px #1a1771, 0 0 10px #0084ff, 0 0 98px #1e7d82;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #1a274e, 0 0 15px #3376dc, 0 0 20px #13bea4,
+      0 0 40px #3d0d9b, 0 0 60px #1a1771, 0 0 10px #0084ff, 0 0 98px #1e7d82;
+    color: #fff6a9;
+  }
+}
