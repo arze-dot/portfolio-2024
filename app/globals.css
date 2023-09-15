@@ -10,10 +10,8 @@ body {
 /* Neon Text */
 
 h1 {
-  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
-  color: #fccaff; */
-  text-shadow: 0 0 5px #1a274e, 0 0 15px #3376dc, 0 0 20px #13bea4,
+  color: rgb(183, 183, 183) !important;
+  text-shadow: 0 0 5px #707ea6, 0 0 15px #3376dc, 0 0 20px #13bea4,
     0 0 40px #3d0d9b, 0 0 60px #1a1771, 0 0 10px #0084ff, 0 0 98px #1e7d82;
   text-align: center;
   animation: blink 3s infinite;
@@ -24,7 +22,29 @@ h1 {
   20%,
   24%,
   55% {
-    color: #111;
+    color: #343d57;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #4f576f, 0 0 15px #3376dc, 0 0 20px #13bea4,
+      0 0 40px #3d0d9b, 0 0 60px #1a1771, 0 0 10px #0084ff, 0 0 98px #1e7d82;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #2f45b2;
     text-shadow: none;
   }
 
@@ -42,24 +62,98 @@ h1 {
   }
 }
 
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #112 url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg) center
+    no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+.logo {
+  text-align: center;
+  width: 65%;
+  height: 500px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  user-select: none;
+}
+
+.logo b {
+  font-size: 128px;
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
+    0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.logo b span {
+  animation: blink linear infinite 2s;
+}
+.logo b span:nth-of-type(2) {
+  animation: blink linear infinite 3s;
+}
 @keyframes blink {
-  20%,
-  24%,
-  55% {
-    color: #111;
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79% {
+    color: #333;
+  }
+  80% {
     text-shadow: none;
   }
-
-  0%,
-  19%,
-  21%,
-  23%,
-  25%,
-  54%,
-  56%,
-  100% {
-    text-shadow: 0 0 5px #1a274e, 0 0 15px #3376dc, 0 0 20px #13bea4,
-      0 0 40px #3d0d9b, 0 0 60px #1a1771, 0 0 10px #0084ff, 0 0 98px #1e7d82;
-    color: #fff6a9;
+  81% {
+    color: inherit;
+    text-shadow: inherit;
   }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+/* follow me @nodws */
+#btn-twtr {
+  clear: both;
+  color: #fff;
+  border: 2px solid;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-family: sans-serif;
+  font-size: 14px;
+  width: 13em;
+  padding: 5px 10px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0px 3px rgba(0, 0, 0, 0.2);
+  opacity: 0.4;
+}
+#btn-twtr:hover {
+  color: #fff;
+  opacity: 1;
 }
