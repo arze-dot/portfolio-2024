@@ -30,12 +30,12 @@ export default {
 
 <template>
   <!-- Hero -->
-  <main class="flex flex-row items-center justify-center w-full mt-[116px] gap-10">
+  <main class="flex flex-col md:flex-row items-center justify-center w-full mt-[116px] gap-10">
     <img src="@/assets/avatar.png" alt="avatar-hero"/>
-    <div class="flex flex-col items-start justify-start gap-0">
-      <div class="text-[48px] font-lalezar m-0"><span class="text-cream underline">Fullstack</span> <span class="text-red underline">Programmer</span></div>
-      <div class="font-lato font-semibold italic text-[20px] text-white m-0">“Transforming Ideas into Interactive Digital Realities”</div>
-      <div class="marquee flex flex-row items-start justify-start max-w-[450px] overflow-hidden mt-5">
+    <div class="flex flex-col items-center justify-center md:items-start md:justify-start gap-0">
+      <div class="text-[30px] md:text-[48px] font-lalezar m-0"><span class="text-cream underline">Fullstack</span> <span class="text-red underline">Programmer</span></div>
+      <div class="font-lato font-semibold italic text-[14px] md:text-[20px] text-white m-0">“Transforming Ideas into Interactive Digital Realities”</div>
+      <div class="marquee flex flex-row items-start justify-start max-w-[350px] md:max-w-[450px] overflow-hidden mt-5">
       <div v-for="(icon, index) in icons" :key="index" class="text-[4.5rem] icon-container">
         <Icon :icon="icon" />
       </div>
